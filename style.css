@@ -95,10 +95,8 @@ main.hero, .hero {
     background-repeat: no-repeat;
     background-position: center;
 	-webkit-text-stroke: 1.5px #2b1005;
-    -webkit-background-clip: text;
     background-clip: text;
 	color: transparent;
-	-webkit-text-fill-color: transparent;
 	filter: drop-shadow(rgba(123, 63, 21, 0.25) 0px 0px 18px);
 	padding-right: 0.1em;
 }
@@ -110,11 +108,8 @@ main.hero, .hero {
 	height: 7px;
 	border-radius: 4px;
 	background: linear-gradient(90deg, #a9744f 0%, #7b3f15 50%, #3d1808 100%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	/* Compatibilidade */
-	background-clip: text;
 	pointer-events: none;
+	opacity: 0.85;
 }
 
 .hero p {
@@ -305,7 +300,7 @@ footer {
 	}
 
     .hero h1 {
-	font-size: 5rem;
+	font-size: 4.5rem;
     letter-spacing: -3px;
 }
     	.projeto-item {
