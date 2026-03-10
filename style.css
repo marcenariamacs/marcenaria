@@ -1,0 +1,239 @@
+.contato-whatsapp-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.6rem;
+	margin-top: 1.2rem;
+	font-size: 1.15rem;
+	font-weight: 600;
+	color: #25d366;
+	text-decoration: none;
+	background: #fff;
+	border-radius: 6px;
+	padding: 0.5rem 1rem 0.5rem 0.7rem;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+	transition: background 0.2s, color 0.2s;
+}
+.contato-whatsapp-link:hover {
+	background: #25d366;
+	color: #fff;
+}
+.contato-whatsapp-link:hover .contato-whatsapp-icone {
+	filter: brightness(0) invert(1);
+}
+.contato-whatsapp-icone {
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+	vertical-align: middle;
+	transition: filter 0.2s;
+}
+
+@keyframes arrow-bounce {
+	0%, 100% { transform: translateX(-50%) translateY(0); }
+	50% { transform: translateX(-50%) translateY(16px); }
+}
+.hero {
+	position: relative;
+}
+/* Header com logo */
+.header-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+	height: 70px;
+}
+.logo-header {
+	height: 90%;
+	width: auto;
+	margin-right: 2rem;
+	display: block;
+}
+nav ul {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	font-family: 'Segoe UI', Arial, sans-serif;
+	background: #a3a3a3;
+	color: #2d1a0b;
+}
+
+header {
+	background: #3d1808;
+	padding: 0;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.1rem;
+	padding: 1.2rem 0.5rem;
+	display: block;
+	transition: color 0.2s;
+}
+nav ul li a:hover {
+	color: #d2a679;
+}
+
+main.hero, .hero {
+	min-height: 78vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #4d270d 0%, #745036 100%);
+	color: #fff;
+	text-align: center;
+	padding: 4rem 1rem 3rem 1rem;
+    margin-bottom: 15px;
+}
+.hero h1 {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+.hero p {
+	font-size: 1.3rem;
+	margin-bottom: 2rem;
+}
+.btn-hero {
+	background: #4b1e0a;
+	color: #fff;
+	padding: 0.9rem 2.2rem;
+	border: none;
+	border-radius: 4px;
+	font-size: 1.1rem;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+	transition: background 0.2s;
+}
+.btn-hero:hover {
+	background: #a9744f;
+	color: #4b1e0a;
+}
+
+
+.scroll-down-arrow {
+	position: absolute;
+	left: 50%;
+	bottom: 24px;
+	transform: translateX(-50%);
+	cursor: pointer;
+	animation: arrow-bounce 1.2s infinite;
+	z-index: 10;
+	background: none;
+	border-radius: 50%;
+	padding: 0.2rem;
+	box-shadow: none;
+}
+.scroll-down-arrow svg {
+	display: block;
+}
+
+.section {
+	padding: 4rem 1rem 3rem 1rem;
+	max-width: 900px;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 10px;
+	box-shadow: 0 2px 12px rgba(75,30,10,0.07);
+	margin-bottom: 2rem;
+    border: 2px solid #3d1808;
+}
+.section h2 {
+	color: #7b3f15;
+	margin-bottom: 1rem;
+}
+
+.sobre-content {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+.sobre-foto {
+	width: 140px;
+	height: auto;
+	border-radius: 12px;
+	box-shadow: 0 2px 12px rgba(75,30,10,0.12);
+	object-fit: cover;
+}
+
+.whatsapp-sticker {
+	position: fixed;
+	right: 2rem;
+	bottom: 2rem;
+	z-index: 200;
+	background: #25d366;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+	transition: box-shadow 0.2s, background 0.2s;
+}
+.whatsapp-sticker:hover {
+	background: #128c7e;
+	box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+}
+.whatsapp-sticker img {
+	width: 32px;
+	height: 32px;
+}
+
+footer {
+	background: #4b1e0a;
+	color: #fff;
+	text-align: center;
+	padding: 1.2rem 0;
+	font-size: 1rem;
+	margin-top: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+	.header-content {
+		flex-direction: column;
+		align-items: center;
+		padding: 0.5rem 1rem;
+		height: auto;
+		max-width: 100%;
+	}
+	.logo-header {
+		margin: 0 auto 0.5rem auto;
+		height: 48px;
+		max-width: 80vw;
+		display: block;
+	}
+	nav ul {
+		flex-direction: row;
+		gap: 0.5rem;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+	nav ul li a {
+		padding: 0.7rem 0.5rem;
+		font-size: 1rem;
+	}
+}
